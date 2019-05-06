@@ -1,0 +1,9 @@
+(a) Doubly Ended Queue, because it allows insertions and deletions at both ends and nowhere in between.
+
+(b) Hash Map, because it offers constant access time for key value pairs and allows both insertions and deletions in costant time as well
+
+(c) Stack, because if we find a dead end we can pop that node out and push a new node to go on a different path.
+
+(d) Linked list, because merging is efficient in linked lists.
+
+(e) Queue, because we are managing sort of a telephone waiting line with first come first serve basis.

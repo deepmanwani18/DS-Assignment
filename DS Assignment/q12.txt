@@ -1,0 +1,16 @@
+Insert(Item, head, A, B)
+	Node *ptr = head
+	while (ptr -> next != A)					// Find location of A
+		ptr = ptr -> next
+	while (ptr -> next != B)			 
+		if(Item <= ptr -> next -> info) 		// Find the right position to insert Item between A and B 
+			ptr -> next -> prev = &Item
+			Item -> next = ptr -> next -> next
+			Item -> prev = ptr
+			ptr -> next = &Item
+			break
+		ptr = ptr -> next
+	ptr -> next -> prev = &Item					// if Item > B insert Item just after B 
+	Item -> next = ptr -> next -> next
+	Item -> prev = ptr
+	ptr -> next = &Item

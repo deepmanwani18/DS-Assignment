@@ -1,0 +1,8 @@
+declare static variable int_part = 0
+void Separate(float n)
+if n less than 1		// Base case
+	print "decimal part = " n
+	print "integer part = " int_part
+else					// Recursive case
+	int_part++
+	call separate(n--)

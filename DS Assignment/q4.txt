@@ -1,0 +1,1 @@
+we must also keep track of the number of items in the collection as if it exceeds the size, we'll not be able to store them.
